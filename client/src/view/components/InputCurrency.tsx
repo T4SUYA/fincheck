@@ -16,6 +16,7 @@ export function InputCurrency({ error, onChange, value }: InputCurrencyProps) {
     <div>
       <CurrencyInput
         decimalSeparator=","
+        groupSeparator="."
         value={value}
         onValueChange={(value) => onChange?.(value)}
         className={cn(
